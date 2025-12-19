@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jobs Single</title>
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="./design/style.css">
+</head>
+
+<body>
+<header>
+  <nav class="navbar navbar-expand-lg bg-white">
+  <div class="container">
+    <a class="navbar-brand" href="index.html"><img src="./Photo/logo.svg" class="img-fluid" alt=""></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse ms-5" id="navbarScroll">
+      <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+        <li class="nav-item">
+          <a class="nav-link active " aria-current="page" href="index.html">Home</a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link " href="find-job.html">Find Job</a>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link" href="employers.html" aria-disabled="true">Employers</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="candidates.html" aria-disabled="true">Candidates</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="blog.html" aria-disabled="true">Blog</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="pages.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Pages
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="shop.html">shop</a></li>
+            <li><a class="dropdown-item" href="about.html">About</a></li>
+            <li><a class="dropdown-item" href="Pricing.html">Pricing</a></li>
+            <li><a class="dropdown-item" href="team.html">Teams</a></li>
+            <li><a class="dropdown-item" href="contact.html">Contact</a></li>
+            <li><a class="dropdown-item" href="question.html">FAQ's</a></li>
+          </ul>
+        </li>
+      </ul>
+      <div class="d-flex">
+        <button class="btn btn-outline-Primary" type="submit" type="submit" data-bs-toggle="modal" data-bs-target="#registrModal">Login/ Register</button>
+        <button class="btn btn-primary rounded-3" type="submit">Job Post</button>
+      </div>
+    </div>
+  </div>
+</nav>
+</header>
+
+<main class="singleJob">
+  <!-- modal -->
+  <div class="modal" id="registrModal">
+    <div class="modal-dialog">
+      <div class="modal-content p-4">
+        <div class="modal-header">
+          <h4 class="modal-title">Login to Superio</h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+
+        <div class="modal-body">
+          <form action="#">
+            <div class="mb-3 mt-3">
+              <label for="name" class="form-label">Username:</label>
+              <input type="text" class="form-control" id="name" placeholder="Username" name="usernaem">
+            </div>
+            <div class="mb-3">
+              <label for="pwd" class="form-label">Password:</label>
+              <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
+            </div>
+            <div class="form-check mb-3">
+              <label class="form-check-label">
+                <input class="form-check-input" type="checkbox" name="remember"> Remember me
+              </label>
+            </div>
+            <div class="d-grid">
+              <button type="button" class="btn btn-primary btn-block">Log in</button>
+            </div>
+            <small class="text-muted text-center">Don't have an account? Signup</small>
+          </form>
+        </div>
+
+        <div class="modal-footer flex-column gap-2">
+          <button type="button" class="btn btn-outline-primary w-100"><i class="bi bi-facebook"></i> Log in via Facebook</button>
+          <button type="button" class="btn btn-outline-danger w-100"><i class="bi bi-google"></i>Log In via Gmail</button>
+       </div>
+
+      </div>
+    </div>
+  </div> 
+<section>
+     <div class="container-fluid single-header p-5">
+    <div class="text-center">
+        <img src="./Photo/black2.webp" class="img-fluid" alt="">
+         <div class="">
+          <h3>Software Engineer (Android)</h3>
+          <div class="job-meta text-muted small">
+            <span class="me-3"><i class="bi bi-geo-alt"></i>London</span>
+            <span class="me-3"><i class="bi bi-clock"></i>11 hours ago</span>
+            <span><i class="bi bi-wallet2"></i>$35k - $45k</span>
+          </div>
+          <span class="job-type mt-2 d-inline-block bg-prople rounded">Full Time</span>
+          <span class="job-type mt-2 d-inline-block  bg-danger rounded">private</span>
+          <span class="job-type mt-2 d-inline-block bg-success rounded">Urgent</span>
+        </div>
+    </div>
+    <div class="text-center mt-3">
+        <button class="btn btn-primary ">Apply For Job</button>
+        <a href="#" class="bg-prople p-2 rounded">
+            <i class="bi bi-bookmark fs-5"></i>
+        </a>
+    </div>
+ </div>
+</section>
+<section>
+    <div class="container job-content mx-auto p-sm-3 mt-5 p-lg-5">
+        <h6>Job Description</h6>
+        <article>
+            As a Product Designer, you will work within a Product Delivery Team fused with UX, engineering, product and data talent. You will help the team design beautiful interfaces that solve business challenges for our clients. We work with a number of Tier 1 banks on building web-based applications for AML, KYC and Sanctions List management workflows. This role is ideal if you are looking to segue your career into the FinTech or Big Data arenas
+        </article>
+
+        <h6 class="mt-5">Key Responsibilities</h6>
+         <ul>
+            <li>Be involved in every step of the product design cycle from discovery to developer handoff and user acceptance testing.</li>
+            <li>Work with BAs, product managers and tech teams to lead the Product Design</li>
+            <li>Maintain quality of the design process and ensure that when designs are translated into code they accurately reflect the design specifications.</li>
+            <li>Accurately estimate design tickets during planning sessions.</li>
+            <li>Contribute to sketching sessions involving non-designersCreate, iterate and maintain UI deliverables including sketch files, style guides, high fidelity prototypes, micro interaction specifications and pattern libraries.</li>
+            <li>Ensure design choices are data led by identifying assumptions to test each sprint, and work with the analysts in your team to plan moderated usability test sessions.</li>
+            <li>Design pixel perfect responsive UI’s and understand that adopting common interface patterns is better for UX than reinventing the wheel</li>
+            <li>Present your work to the wider business at Show & Tell sessions.</li>
+         </ul>
+
+
+          <h6 class="mt-5">Skill & Experience</h6>
+         <ul>
+            <li>You have at least 3 years’ experience working as a Product Designer.</li>
+            <li>You have experience using Sketch and InVision or Framer X</li>
+            <li>You have some previous experience working in an agile environment – Think two-week sprints.</li>
+            <li>You are familiar using Jira and Confluence in your workflow</li>
+         </ul>
+
+         <div class="my-5">
+            <span><strong>Share this Job </strong></span>
+            <button type="button" class="btn btn-primary">
+                <i class="bi bi-facebook"></i>
+                facebook
+            </button>
+
+             <button type="button" class="btn btn-primary">
+                <i class="bi bi-twitter"></i>
+                Twitter
+            </button>
+
+             <button type="button" class="btn btn-info">
+                <i class="bi bi-linkedin"></i>
+                Linkedin
+            </button>
+         </div>
+           
+
+     <h6>Related Jobs</h6>
+       <p>2020 jobs live - 293 added today.</p>
+
+            <!-- job row -->
+
+    <div class="row mt-5 gx-3">
+        <div class="col-sm-12">
+            <div class="job-card p-4 mb-4 bg-white border">
+         <div class="row  gy-3 d-flex justify-content-center">
+
+        <div class="col-2 text-center">
+          <img src="./Photo/black2.webp" style="width:40px">
+        </div>
+
+        <div class="col-9">
+          <a href="singleJob-list.html"><h6>Software Engineer (Android)</h6></a>
+          <div class="job-meta text-muted small">
+            <span class="me-3"><i class="bi bi-geo-alt"></i>London</span>
+            <span class="me-3"><i class="bi bi-clock"></i>11 hours ago</span>
+            <span><i class="bi bi-wallet2"></i>$35k - $45k</span>
+          </div>
+          <span class="job-type mt-2 d-inline-block bg-prople rounded">Full Time</span>
+          <span class="job-type mt-2 d-inline-block  bg-danger rounded">private</span>
+          <span class="job-type mt-2 d-inline-block bg-success rounded">Urgent</span>
+        </div>
+
+        <div class="col-1 text-md-end">
+            <i class="bi bi-bookmark fs-5"></i>
+        </div>
+
+      </div>
+    </div>
+        </div>
+
+         <div class="col-sm-12">
+            <div class="job-card p-4 mb-4 bg-white border">
+         <div class="row  gy-3 d-flex justify-content-center">
+
+        <div class="col-2 text-center">
+          <img src="./Photo/black.webp" style="width:40px">
+        </div>
+
+        <div class="col-9">
+          <a href="singleJob-list.html"><h6>Software Engineer (Android)</h6></a>
+          <div class="job-meta text-muted small">
+            <span class="me-3"><i class="bi bi-geo-alt"></i>London</span>
+            <span class="me-3"><i class="bi bi-clock"></i>11 hours ago</span>
+            <span><i class="bi bi-wallet2"></i>$35k - $45k</span>
+          </div>
+          <span class="job-type mt-2 d-inline-block bg-prople rounded">Full Time</span>
+          <span class="job-type mt-2 d-inline-block  bg-danger rounded">private</span>
+          <span class="job-type mt-2 d-inline-block bg-success rounded">Urgent</span>
+        </div>
+
+        <div class="col-1 text-md-end">
+            <i class="bi bi-bookmark fs-5"></i>
+        </div>
+
+      </div>
+    </div>
+        </div>
+
+       <div class="col-sm-12">
+            <div class="job-card p-4 mb-4 bg-white border">
+         <div class="row  gy-3 d-flex justify-content-center">
+
+        <div class="col-2 text-center">
+          <img src="./Photo/red.webp" style="width:40px">
+        </div>
+
+        <div class="col-9">
+          <a href="singleJob-list.html"><h6>Software Engineer (Android)</h6></a>
+          <div class="job-meta text-muted small">
+            <span class="me-3"><i class="bi bi-geo-alt"></i>London</span>
+            <span class="me-3"><i class="bi bi-clock"></i>11 hours ago</span>
+            <span><i class="bi bi-wallet2"></i>$35k - $45k</span>
+          </div>
+          <span class="job-type mt-2 d-inline-block bg-prople rounded">Full Time</span>
+          <span class="job-type mt-2 d-inline-block  bg-danger rounded">private</span>
+          <span class="job-type mt-2 d-inline-block bg-success rounded">Urgent</span>
+        </div>
+
+        <div class="col-1 text-md-end">
+            <i class="bi bi-bookmark fs-5"></i>
+        </div>
+
+      </div>
+    </div>
+        </div>  
+     
+    </div>
+         </section>
+
+    </div>
+</section>
+
+
+</main>
+
+<footer>
+  <div class="container">
+    
+    <div class="row bg-white p-5 d-flex justify-content-center align-items-center">
+      <div class="col-sm-12 col-lg-3">
+        <ul class="list-unstyled">
+          <li><img src="./Photo/logo.svg" alt="logo" style="width: 120px;"></li>
+          <li class="fw-bold">Call Us</li>
+          <li><a href="tel:+93791234567" class="fw-bold d-block"></a></li>
+          <li><a href="#" class="text-muted">329 Queensberry Street, North Melbourne VIC</a></li>
+          <li><a href="#" class="text-muted">3051, Australia.</a></li>
+          <li><a href="#" class="text-muted">support@superio.com</a></li>
+      </div>
+
+      <div class="col-sm-12 col-lg-9">
+        <div class="row">
+            <div class="col-6 col-lg-3">
+        <ul class="list-unstyled">
+          <li class="fw-bold">For Candidates</li>
+          <li><a href="" class="text-muted"></a>Browse Jobs</li>
+          <li><a href="" class="text-muted">Candidate Dashboard</a></li>
+          <li><a href="" class="text-muted">Job Alerts</a></li>
+          <li><a href="" class="text-muted">My Bookmarks</a></li>
+        </ul>
+      </div>
+
+      <div class="col-6 col-lg-3">
+        <ul class="list-unstyled">
+          <li class="fw-bold">For Employers</li>
+          <li><a href="services.html" class="text-muted">Browse Candidates</a></li>
+          <li><a href="services.html" class="text-muted">Add JOb</a></li>
+          <li><a href="services.html" class="text-muted">Job Packages</a></li>
+        </ul>
+      </div>
+
+      <div class="col-6 col-lg-3">
+        <ul class="list-unstyled">
+          <li class="fw-bold">About Us</li>
+           <li><a href="services.html" class="text-muted">About Us</a></li>
+          <li><a href="services.html" class="text-muted">Job Page Invoice</a></li>
+          <li><a href="services.html" class="text-muted">Terms Page</a></li>
+          <li><a href="services.html" class="text-muted">Blog</a></li>
+          <li><a href="services.html" class="text-muted">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="col-6 col-lg-3">
+        <ul class="list-unstyled">
+          <li class="fw-bold">Mobile Apps</li>
+          <li><a href="services.html" class="text-muted">Click and Get started in seconds</a></li>
+          <li class="mb-2"><a href="services.html"><img src="./Photo/apple.webp" class="img-fluid" alt="apple"></a></li>
+          <li><a href="services.html"><img src="./Photo/google.webp" class="img-fluid" alt="apple"></a></li>
+        </ul>
+      </div>
+        </div>
+      </div>
+      <hr>
+    </div>
+    <div class="row text-muted mx-4">
+      <div class="col-sm-12 col-lg-6">
+        <p>&copy;2025 Superio . All rights reserved.</p>
+      </div>
+      <div class="col-sm-12 col-lg-6 text-end">
+         <i class="bi bi-facebook"></i>
+         <i class="bi bi-twitter"></i>
+         <i class="bi bi-instagram"></i>
+         <i class="bi bi-linkedin"></i>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+<!-- count cdn -->
+     <script src="https://cdn.jsdelivr.net/npm/@srexi/purecounterjs/dist/purecounter_vanilla.js"></script>
+     <script>
+         new PureCounter();
+     </script>
+</body>
+</html>

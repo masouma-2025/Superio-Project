@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact</title>
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="./design/style.css">
+</head>
+
+<body>
+<header>
+  <nav class="navbar navbar-expand-lg bg-white">
+  <div class="container">
+    <a class="navbar-brand" href="index.html"><img src="./Photo/logo.svg" class="img-fluid" alt=""></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse ms-5" id="navbarScroll">
+      <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+        <li class="nav-item">
+          <a class="nav-link active " aria-current="page" href="index.html">Home</a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link " href="find-job.html">Find Job</a>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link" href="employers.html" aria-disabled="true">Employers</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="candidates.html" aria-disabled="true">Candidates</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="blog.html" aria-disabled="true">Blog</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="pages.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Pages
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="shop.html">shop</a></li>
+            <li><a class="dropdown-item" href="about.html">About</a></li>
+            <li><a class="dropdown-item" href="Pricing.html">Pricing</a></li>
+            <li><a class="dropdown-item" href="team.html">Teams</a></li>
+            <li><a class="dropdown-item" href="contact.html">Contact</a></li>
+            <li><a class="dropdown-item" href="question.html">FAQ's</a></li>
+          </ul>
+        </li>
+      </ul>
+      <div class="d-flex">
+        <button class="btn btn-outline-Primary" type="submit" data-bs-toggle="modal" data-bs-target="#registrModal">Login/ Register</button>
+        <button class="btn btn-primary rounded-3" type="submit">Job Post</button>
+      </div>
+    </div>
+  </div>
+</nav>
+</header>
+
+<!-- ================= MAIN ================= -->
+<main class="contact">
+  <!-- modal -->
+  <div class="modal" id="registrModal">
+    <div class="modal-dialog">
+      <div class="modal-content p-4">
+        <div class="modal-header">
+          <h4 class="modal-title">Login to Superio</h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+
+        <div class="modal-body">
+          <form action="#">
+            <div class="mb-3 mt-3">
+              <label for="name" class="form-label">Username:</label>
+              <input type="text" class="form-control" id="name" placeholder="Username" name="usernaem">
+            </div>
+            <div class="mb-3">
+              <label for="pwd" class="form-label">Password:</label>
+              <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
+            </div>
+            <div class="form-check mb-3">
+              <label class="form-check-label">
+                <input class="form-check-input" type="checkbox" name="remember"> Remember me
+              </label>
+            </div>
+            <div class="d-grid">
+              <button type="button" class="btn btn-primary btn-block">Log in</button>
+            </div>
+            <small class="text-muted text-center">Don't have an account? Signup</small>
+          </form>
+        </div>
+
+        <div class="modal-footer flex-column gap-2">
+          <button type="button" class="btn btn-outline-primary w-100" ><i class="bi bi-facebook"></i> Log in via Facebook</button>
+          <button type="button" class="btn btn-outline-danger w-100"><i class="bi bi-google"></i>Log In via Gmail</button>
+       </div>
+
+      </div>
+    </div>
+  </div>
+ <section>
+    <div class="container-fluid">
+        <div class="contact-header">
+            <iframe
+             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6573.6815837655895!2d69.17033626712134!3d34.53225451113208!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38d16d2572d391cb%3A0x40e4136f91c89efe!2sACBAR!5e0!3m2!1sen!2s!4v1765993843369!5m2!1sen!2s"
+              style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+    </div>
+ </section>
+ <section class="contact-form">
+    <div class="container  mt-5">
+       <form action="/action_page.php" class="p-5 mx-auto border-1 border">
+        <h6 class="mb-5">Leave A Message</h6>
+            <div class="row mt-3">
+                <div class="col-sm-12 col-lg-6">
+                    <label for="username" class="form-label">Your Name:</label>
+                     <input type="text" class="form-control" id="username" placeholder="Your Name" name="Username"required>
+                </div>
+
+                <div class="col-sm-12 col-lg-6 ">
+                  <label for="email" class="form-label">Email:</label>
+                  <input type="email" class="form-control" id="email" placeholder="Enter email" name="email" required>
+                </div>  
+            </div>
+            <div class="row mt-3">
+                <div class="col-12">
+                    <label for="subject" class="form-label">Subject:</label>
+                <input type="text" class="form-control" id="subject" placeholder="Subject" name="subject" required>
+                </div>
+            </div>
+            <div class="row mt-3">
+               <div class="col-12">
+                 <label for="massage">Your Massage:</label>
+                <textarea class="form-control" rows="5" id="massage" name="text" placeholder="write your massage..."></textarea>
+               </div>
+            </div>
+            <div class="d-grid mt-4">
+                <button type="submit" class="btn btn-primary btn-block">Send Massage</button>
+            </div>
+       </form>
+    </div>
+ </section>
+
+</main>
+<footer>
+  <div class="container">
+    
+    <div class="row bg-white p-5 d-flex justify-content-center align-items-center">
+      <div class="col-sm-12 col-lg-3">
+        <ul class="list-unstyled">
+          <li><img src="./Photo/logo.svg" alt="logo" style="width: 120px;"></li>
+          <li class="fw-bold">Call Us</li>
+          <li><a href="tel:+93791234567" class="fw-bold d-block"></a></li>
+          <li><a href="#" class="text-muted">329 Queensberry Street, North Melbourne VIC</a></li>
+          <li><a href="#" class="text-muted">3051, Australia.</a></li>
+          <li><a href="#" class="text-muted">support@superio.com</a></li>
+      </div>
+
+      <div class="col-sm-12 col-lg-9">
+        <div class="row">
+            <div class="col-6 col-lg-3">
+        <ul class="list-unstyled">
+          <li class="fw-bold">For Candidates</li>
+          <li><a href="" class="text-muted"></a>Browse Jobs</li>
+          <li><a href="" class="text-muted">Candidate Dashboard</a></li>
+          <li><a href="" class="text-muted">Job Alerts</a></li>
+          <li><a href="" class="text-muted">My Bookmarks</a></li>
+        </ul>
+      </div>
+
+      <div class="col-6 col-lg-3">
+        <ul class="list-unstyled">
+          <li class="fw-bold">For Employers</li>
+          <li><a href="services.html" class="text-muted">Browse Candidates</a></li>
+          <li><a href="services.html" class="text-muted">Add JOb</a></li>
+          <li><a href="services.html" class="text-muted">Job Packages</a></li>
+        </ul>
+      </div>
+
+      <div class="col-6 col-lg-3">
+        <ul class="list-unstyled">
+          <li class="fw-bold">About Us</li>
+           <li><a href="services.html" class="text-muted">About Us</a></li>
+          <li><a href="services.html" class="text-muted">Job Page Invoice</a></li>
+          <li><a href="services.html" class="text-muted">Terms Page</a></li>
+          <li><a href="services.html" class="text-muted">Blog</a></li>
+          <li><a href="services.html" class="text-muted">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="col-6 col-lg-3">
+        <ul class="list-unstyled">
+          <li class="fw-bold">Mobile Apps</li>
+          <li><a href="services.html" class="text-muted">Click and Get started in seconds</a></li>
+          <li class="mb-2"><a href="services.html"><img src="./Photo/apple.webp" class="img-fluid" alt="apple"></a></li>
+          <li><a href="services.html"><img src="./Photo/google.webp" class="img-fluid" alt="apple"></a></li>
+        </ul>
+      </div>
+        </div>
+      </div>
+      <hr>
+    </div>
+    <div class="row text-muted mx-4">
+      <div class="col-sm-12 col-lg-6">
+        <p>&copy;2025 Superio . All rights reserved.</p>
+      </div>
+      <div class="col-sm-12 col-lg-6 text-end">
+         <i class="bi bi-facebook"></i>
+         <i class="bi bi-twitter"></i>
+         <i class="bi bi-instagram"></i>
+         <i class="bi bi-linkedin"></i>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+<!-- count cdn -->
+     <script src="https://cdn.jsdelivr.net/npm/@srexi/purecounterjs/dist/purecounter_vanilla.js"></script>
+     <script>
+         new PureCounter();
+     </script>
+</body>
+</html>

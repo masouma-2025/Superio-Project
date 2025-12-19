@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Candidate</title>
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="./design/style.css">
+</head>
+
+<body>
+<header>
+  <nav class="navbar navbar-expand-lg bg-white fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="index.html"><img src="./Photo/logo.svg" class="img-fluid" alt=""></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse ms-5" id="navbarScroll">
+      <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+        <li class="nav-item">
+          <a class="nav-link active " aria-current="page" href="index.html">Home</a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link " href="find-job.html">Find Job</a>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link" href="employers.html" aria-disabled="true">Employers</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="candidates.html" aria-disabled="true">Candidates</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="blog.html" aria-disabled="true">Blog</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="pages.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Pages
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="shop.html">shop</a></li>
+            <li><a class="dropdown-item" href="about.html">About</a></li>
+            <li><a class="dropdown-item" href="Pricing.html">Pricing</a></li>
+            <li><a class="dropdown-item" href="team.html">Teams</a></li>
+            <li><a class="dropdown-item" href="contact.html">Contact</a></li>
+            <li><a class="dropdown-item" href="question.html">FAQ's</a></li>
+          </ul>
+        </li>
+      </ul>
+      <div class="d-flex">
+        <button class="btn btn-outline-Primary" type="submit" data-bs-toggle="modal" data-bs-target="#registrModal">Login/ Register</button>
+        <button class="btn btn-primary rounded-3" type="submit">Job Post</button>
+      </div>
+    </div>
+  </div>
+</nav>
+</header>
+
+<main class="condida">
+  <!-- modal -->
+   <div class="modal" id="registrModal">
+    <div class="modal-dialog">
+      <div class="modal-content p-4">
+        <div class="modal-header">
+          <h4 class="modal-title">Login to Superio</h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+
+        <div class="modal-body">
+          <form action="#">
+            <div class="mb-3 mt-3">
+              <label for="name" class="form-label">Username:</label>
+              <input type="text" class="form-control" id="name" placeholder="Username" name="usernaem">
+            </div>
+            <div class="mb-3">
+              <label for="pwd" class="form-label">Password:</label>
+              <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
+            </div>
+            <div class="form-check mb-3">
+              <label class="form-check-label">
+                <input class="form-check-input" type="checkbox" name="remember"> Remember me
+              </label>
+            </div>
+            <div class="d-grid">
+              <button type="button" class="btn btn-primary btn-block">Log in</button>
+            </div>
+            <small class="text-muted text-center">Don't have an account? Signup</small>
+          </form>
+        </div>
+
+        <div class="modal-footer flex-column gap-2">
+          <button type="button" class="btn btn-outline-primary w-100"><i class="bi bi-facebook"></i> Log in via Facebook</button>
+          <button type="button" class="btn btn-outline-danger w-100"><i class="bi bi-google"></i>Log In via Gmail</button>
+       </div>
+
+      </div>
+    </div>
+  </div>
+<section>
+   <div class="container-fluid condida-header p-5">
+        <div class="row">
+            <div class="col-12 text-center">
+                <img src="./Photo/person9.jpg" class="img-fluid rounded-circle" style="width: 100px; height: 100px;" alt="Candidate">
+                <h6>Leslie Alexander</h6>
+                <small class="text-primary">Marketing Expert</small>
+            </div>
+        </div>
+        <div class="row text-center justify-content-center align-items-center mt-5">
+            <div class="col-sm-12 col-lg-3 tags">
+                <span>App</span>
+                <span>Design</span>
+                <span>Digital</span>
+            </div>
+            <div class="col-sm-12 col-lg-6 ">
+            <ul class="list-unstyled meta">
+                <li>
+                <i class="bi bi-geo-alt"></i> London, UK
+                </li>
+                <li>
+                <i class="bi bi-currency-dollar"></i> $99 / hour
+                </li>
+                <li>
+                    <i class="bi bi-stopwatch"></i>Member Since,Aug 19, 2020
+                </li>
+            </ul>
+            </div>
+            <div class="col-sm-12 col-lg-3">
+                <button class="btn btn-primary ">Download CV</button>
+                <a href="#" class="bg-prople p-2 rounded">
+                    <i class="bi bi-bookmark fs-5"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+ </div>
+</section>
+<section>
+  <div class="container">
+    <div class="row p-5">
+      <div class="col-sm-12 col-lg-4">
+        <!-- row1 -->
+        <div class="row">
+          <div class="col-12 firstBox p-4 bg-lightbule rounded-2">
+              <ul class="list-group border-0 ">
+                <li class="list-group-item d-flex  align-items-center ">
+                  <i class="bi bi-file-earmark mb-4 me-4 fs-4"></i>
+                  <div>
+                    <h6>Experience:</h6>
+                    <span>0-2 Years</span>
+                  </div>
+                </li>
+                <li class="list-group-item d-flex  align-items-center ">
+                  <i class="bi bi-hourglass-top mb-4 me-4 fs-4"></i>
+                  <div>
+                    <h6>Age:</h6>
+                    <span>28-33 Years</span>
+                  </div>
+                </li>
+                <li class="list-group-item d-flex  align-items-center ">
+                  <i class="bi bi-cash-coin mb-4 me-4 fs-4"></i>
+                  <div>
+                    <h6>Current Salary:</h6>
+                    <span>11K - 15K</span>
+                  </div>
+                </li>
+                <li class="list-group-item d-flex  align-items-center ">
+                  <i class="bi bi-file-earmark mb-4 me-4 fs-4"></i>
+                  <div>
+                    <h6>Expected Salary:</h6>
+                    <span>26K - 30K</span>
+                  </div>
+                </li>
+                <li class="list-group-item d-flex  align-items-center ">
+                  <i class="bi bi-person mb-4 me-4 fs-4"></i>
+                  <div>
+                    <h6>Gender</h6>
+                    <span>Female</span>
+                  </div>
+                </li>
+                <li class="list-group-item d-flex  align-items-center ">
+                  <i class="bi bi-translate mb-4 me-4 fs-4"></i>
+                  <div>
+                    <h6>Language:</h6>
+                    <span>English, German, Spanish</span>
+                  </div>
+                </li>
+                <li class="list-group-item d-flex  align-items-center ">
+                  <i class="bi bi-backpack-fill mb-4 me-4 fs-4"></i>
+                  <div>
+                    <h6>Education Level:</h6>
+                    <span>Master Degree</span>
+                  </div>
+                </li>
+                
+              </ul>
+          </div>
+        </div>
+       <!-- row2 -->
+        <div class="row mt-5 ">
+          <div class="col-12 rounded-3 p-4 bg-lightbule">
+           <ul class="list-group">
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+                  Social media:
+                  <span>
+                    <i class="bi bi-facebook"></i>
+                    <i class="bi bi-twitter"></i>
+                    <i class="bi bi-instagram"></i>
+                    <i class="bi bi-linkedin"></i>
+                  </span>
+                </li>
+           </ul>  
+           
+          </div>
+        </div>
+        <!-- 3 -->
+        <div class="row mt-5 ">
+            <h6>Professional Skills</h6>
+          <div class="col-12 rounded-3 p-4 bg-lightbule">
+            <div class="skills">
+                <span class="skill-tag">App</span>
+                <span class="skill-tag">Administrative</span>
+                <span class="skill-tag">Android</span>
+                <span class="skill-tag">WordPress</span>
+                <span class="skill-tag">Design</span>
+                <span class="skill-tag">React</span>
+            </div>
+          </div>
+        </div>
+        <!-- row4 -->
+        <div class="row mt-5">
+          <div class="col-12 rounded-3 p-4 bg-lightbule">
+             <h6 class="mb-4">Contact Us</h6>
+             <form action="#">
+                <div class="mb-3 mt-3">
+                  <input type="text" class="form-control" id="name" placeholder="Your Name" name="email">
+                </div>
+                <div class="mb-3">
+                  <input type="text" class="form-control" id="email" placeholder="Email Address" name="mail">
+                </div>
+                <div class=" mb-3">
+                  <textarea class="form-control" rows="5" id="comment" placeholder="Massage" name="text"></textarea>
+                </div>
+                <div class="d-grid">
+                    <button type="submit" class="btn btn-primary btn-block">submit</button>
+                 </div>
+              </form>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-12 col-lg-8 px-5">
+        <h4 class="mb-4">Candidates About</h4>
+        <article>
+            Hello my name is Nicole Wells and web developer from Portland. In pharetra orci dignissim, blandit mi semper, ultricies diam. Suspendisse malesuada suscipit nunc non volutpat. Sed porta nulla id orci laoreet tempor non consequat enim. Sed vitae aliquam velit. Aliquam ante erat, blandit at pretium et, accumsan ac est. Integer vehicula rhoncus molestie. Morbi ornare ipsum sed sem condimentum, et pulvinar tortor luctus.
+             Suspendisse condimentum lorem ut elementum aliquam.
+        </article>
+        <article class="my-4">
+            Mauris nec erat ut libero vulputate pulvinar. Aliquam ante erat, blandit at pretium et, accumsan ac est. Integer vehicula rhoncus molestie. Morbi ornare ipsum sed sem condimentum, et pulvinar tortor luctus. Suspendisse condimentum lorem ut elementum aliquam.
+            Mauris nec erat ut libero vulputate pulvinar.
+        </article>
+        <div class="row g-2">
+          <div class="col-sm-12 col-lg-3">
+            <img src="./Photo/side3.jpg" class="img-fluid rounded-3" alt="">
+          </div>
+          <div class="col-sm-12 col-lg-3">
+            <img src="./Photo/companyinside.jpg" class="img-fluid rounded-3" alt="">
+          </div>
+          <div class="col-sm-12 col-lg-3">
+            <img src="./Photo/compnainsid2.jpg" class="img-fluid rounded-3" alt="">
+          </div>
+          <div class="col-sm-12 col-lg-3">
+            <img src="./Photo/side3.jpg" class="img-fluid rounded-3" alt="">
+          </div>
+        </div>
+        <!-- part 2 -->
+<section class="education mt-5">
+  <h4 class="mb-3 mb-md-4">Education</h4>
+
+  <div class="timeline">
+    <!-- Item 1 -->
+    <div class="timeline-item d-flex d-flex-column flex-md-row">
+      <div class="timeline-icon me-3">
+        <span>M</span>
+        <div class="timeline-line"></div>
+      </div>
+      <div class="timeline-content">
+        <h6 class="d-inline">Bachelor in Fine Arts</h6>
+        <span class="timeTag ms-4">2012 - 2014</span>
+        <small class="text-muted d-block">Modern College</small>
+        <p class="mx-md-4 mx-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin a ipsum tellus. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+      </div>
+    </div>
+
+    <!-- Item 2 -->
+    <div class="timeline-item d-flex">
+      <div class="timeline-icon me-3">
+        <span>H</span>
+        <div class="timeline-line"></div>
+      </div>
+      <div class="timeline-content">
+        <h6 class="d-inline">Bachelor in Fine Arts</h6>
+        <span class="timeTag ms-4">2012 - 2014</span>
+        <small class="text-muted d-block">Modern College</small>
+        <p class="mx-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin a ipsum tellus. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+      </div>
+    </div>
+  </div>
+  <!-- work experience -->
+     <h4 class="mb-3 mb-md-4">Work & Experience</h4>
+
+  <div class="timeline work">
+    <!-- Item 1 -->
+    <div class="timeline-item d-flex">
+      <div class="timeline-icon me-3">
+        <span>M</span>
+        <div class="timeline-line"></div>
+      </div>
+      <div class="timeline-content">
+        <h6 class="d-inline">Bachelor in Fine Arts</h6>
+        <span class="timeTag ms-4">2012 - 2014</span>
+        <small class="text-muted d-block">Modern College</small>
+        <p class="mx-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin a ipsum tellus. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+      </div>
+    </div>
+
+    <!-- Item 2 -->
+    <div class="timeline-item d-flex">
+      <div class="timeline-icon me-3">
+        <span>H</span>
+        <div class="timeline-line"></div>
+      </div>
+      <div class="timeline-content">
+        <h6 class="d-inline">Bachelor in Fine Arts</h6>
+        <span class="timeTag ms-4">2012 - 2014</span>
+        <small class="text-muted d-block">Modern College</small>
+        <p class="mx-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin a ipsum tellus. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+      </div>
+    </div>
+  </div>
+  <!-- awad -->
+     <h4 class="mb-3 mb-md-4">Awards</h4>
+
+  <div class="timeline awards">
+    <!-- Item 1 -->
+    <div class="timeline-item d-flex">
+      <div class="timeline-icon me-3">
+        <span>M</span>
+        <div class="timeline-line"></div>
+      </div>
+      <div class="timeline-content">
+        <h6 class="d-inline">Bachelor in Fine Arts</h6>
+        <span class="timeTag ms-4">2012 - 2014</span>
+        <small class="text-muted d-block">Modern College</small>
+        <p class="mx-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin a ipsum tellus. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+      </div>
+    </div>
+
+    <!-- Item 2 -->
+    <div class="timeline-item d-flex">
+      <div class="timeline-icon me-3">
+        <span>H</span>
+        <div class="timeline-line"></div>
+      </div>
+      <div class="timeline-content">
+        <h6 class="d-inline">Bachelor in Fine Arts</h6>
+        <span class="timeTag ms-4">2012 - 2014</span>
+        <small class="text-muted d-block">Modern College</small>
+        <p class="mx-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin a ipsum tellus. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+<hr>
+<footer>
+  <div class="container">
+    
+    <div class="row bg-white p-5 d-flex justify-content-center align-items-center">
+      <div class="col-sm-12 col-lg-3">
+        <ul class="list-unstyled">
+          <li><img src="./Photo/logo.svg" alt="logo" style="width: 120px;"></li>
+          <li class="fw-bold">Call Us</li>
+          <li><a href="tel:+93791234567" class="fw-bold d-block"></a></li>
+          <li><a href="#" class="text-muted">329 Queensberry Street, North Melbourne VIC</a></li>
+          <li><a href="#" class="text-muted">3051, Australia.</a></li>
+          <li><a href="#" class="text-muted">support@superio.com</a></li>
+      </div>
+
+      <div class="col-sm-12 col-lg-9">
+        <div class="row">
+            <div class="col-6 col-lg-3">
+        <ul class="list-unstyled">
+          <li class="fw-bold">For Candidates</li>
+          <li><a href="" class="text-muted"></a>Browse Jobs</li>
+          <li><a href="" class="text-muted">Candidate Dashboard</a></li>
+          <li><a href="" class="text-muted">Job Alerts</a></li>
+          <li><a href="" class="text-muted">My Bookmarks</a></li>
+        </ul>
+      </div>
+
+      <div class="col-6 col-lg-3">
+        <ul class="list-unstyled">
+          <li class="fw-bold">For Employers</li>
+          <li><a href="services.html" class="text-muted">Browse Candidates</a></li>
+          <li><a href="services.html" class="text-muted">Add JOb</a></li>
+          <li><a href="services.html" class="text-muted">Job Packages</a></li>
+        </ul>
+      </div>
+
+      <div class="col-6 col-lg-3">
+        <ul class="list-unstyled">
+          <li class="fw-bold">About Us</li>
+           <li><a href="services.html" class="text-muted">About Us</a></li>
+          <li><a href="services.html" class="text-muted">Job Page Invoice</a></li>
+          <li><a href="services.html" class="text-muted">Terms Page</a></li>
+          <li><a href="services.html" class="text-muted">Blog</a></li>
+          <li><a href="services.html" class="text-muted">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="col-6 col-lg-3">
+        <ul class="list-unstyled">
+          <li class="fw-bold">Mobile Apps</li>
+          <li><a href="services.html" class="text-muted">Click and Get started in seconds</a></li>
+          <li class="mb-2"><a href="services.html"><img src="./Photo/apple.webp" class="img-fluid" alt="apple"></a></li>
+          <li><a href="services.html"><img src="./Photo/google.webp" class="img-fluid" alt="apple"></a></li>
+        </ul>
+      </div>
+        </div>
+      </div>
+      <hr>
+    </div>
+    <div class="row text-muted mx-4">
+      <div class="col-sm-12 col-lg-6">
+        <p>&copy;2025 Superio . All rights reserved.</p>
+      </div>
+      <div class="col-sm-12 col-lg-6 text-end">
+         <i class="bi bi-facebook"></i>
+         <i class="bi bi-twitter"></i>
+         <i class="bi bi-instagram"></i>
+         <i class="bi bi-linkedin"></i>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+<!-- count cdn -->
+     <script src="https://cdn.jsdelivr.net/npm/@srexi/purecounterjs/dist/purecounter_vanilla.js"></script>
+     <script>
+         new PureCounter();
+     </script>
+</body>
+</html>

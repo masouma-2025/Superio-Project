@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog</title>
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="./design/style.css">
+</head>
+
+<body>
+<header>
+  <nav class="navbar navbar-expand-lg bg-white fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="index.html"><img src="./Photo/logo.svg" class="img-fluid" alt=""></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse ms-5" id="navbarScroll">
+      <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+        <li class="nav-item">
+          <a class="nav-link active " aria-current="page" href="index.html">Home</a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link " href="find-job.html">Find Job</a>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link" href="employers.html" aria-disabled="true">Employers</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="candidates.html" aria-disabled="true">Candidates</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="blog.html" aria-disabled="true">Blog</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="pages.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Pages
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="shop.html">shop</a></li>
+            <li><a class="dropdown-item" href="about.html">About</a></li>
+            <li><a class="dropdown-item" href="Pricing.html">Pricing</a></li>
+            <li><a class="dropdown-item" href="team.html">Teams</a></li>
+            <li><a class="dropdown-item" href="contact.html">Contact</a></li>
+            <li><a class="dropdown-item" href="question.html">FAQ's</a></li>
+          </ul>
+        </li>
+      </ul>
+      <div class="d-flex">
+        <button class="btn btn-outline-Primary" type="submit"  data-bs-toggle="modal" data-bs-target="#registrModal">Login/ Register</button>
+        <button class="btn btn-primary rounded-3" type="submit">Job Post</button>
+      </div>
+    </div>
+  </div>
+</nav>
+</header>
+<main class="blog">
+  <!-- modal -->
+    <div class="modal" id="registrModal">
+    <div class="modal-dialog">
+      <div class="modal-content p-4">
+        <div class="modal-header">
+          <h4 class="modal-title">Login to Superio</h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+
+        <div class="modal-body">
+          <form action="#">
+            <div class="mb-3 mt-3">
+              <label for="name" class="form-label">Username:</label>
+              <input type="text" class="form-control" id="name" placeholder="Username" name="usernaem">
+            </div>
+            <div class="mb-3">
+              <label for="pwd" class="form-label">Password:</label>
+              <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
+            </div>
+            <div class="form-check mb-3">
+              <label class="form-check-label">
+                <input class="form-check-input" type="checkbox" name="remember"> Remember me
+              </label>
+            </div>
+            <div class="d-grid">
+              <button type="button" class="btn btn-primary btn-block">Log in</button>
+            </div>
+            <small class="text-muted text-center">Don't have an account? Signup</small>
+          </form>
+        </div>
+
+        <div class="modal-footer flex-column gap-2">
+          <button type="button" class="btn btn-outline-primary w-100"><i class="bi bi-facebook" data-bs-toggle="modal" data-bs-target="#registrModal"></i> Log in via Facebook</button>
+          <button type="button" class="btn btn-outline-danger w-100"><i class="bi bi-google"></i>Log In via Gmail</button>
+       </div>
+
+      </div>
+    </div>
+  </div>
+<section>
+  <div class="container-fluid text-center blog-header p-5">
+    <h2>Blog</h2>    
+ </div>
+</section>
+<section>
+     <div class="container mt-5 blog">
+        <div class="row g-4">
+            <div class="col-sm-12 col-lg-4">
+                <div class="card p-3 rounded-2">
+                    <div class="news-img">
+                        <img src="./Photo/working.jpg" class="img-fluid rounded-2" alt="...">
+                    </div> 
+                <div class="card-body">
+                    <div class="mb-3 text-muted">
+                        <time datetime="2025-12-15">15 December 2025</time>
+                        <a href="#"  class="ms-4 text-muted">12 comment</a>
+                    </div>
+                    <h6 class="card-title">Attract Sales And Profits</h6>
+                    <p class="card-text text-muted">A job ravenously while Far much that one rank beheld after outside..</p>
+                    <a href="blog.html">Read More <i class="bi bi-chevron-right"></i></a>
+                </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-lg-4">
+                <div class="card rounded-2 p-3">
+                    <div class="news-img">
+                        <img src="./Photo/overwork.jpg" class="img-fluid rounded-2" alt="...">
+                    </div> 
+                <div class="card-body">
+                     <div class="mb-3 text-muted">
+                        <time datetime="2025-12-15">18 December 2025</time>
+                        <a href="#" class="ms-4 text-muted">10 comment</a>
+                    </div>
+                    <h6 class="card-title ">Overworked Newspaper Editor</h6>
+                    <p class="card-text text-muted">A job ravenously while Far much that one rank beheld after outside....</p>
+                    <a href="blog.html">Read More <i class="bi bi-chevron-right"></i></a>
+                </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-lg-4">
+                <div class="card rounded-2 p-3">
+                    <div class="news-img">
+                        <img src="./Photo/interviwe.jpg" class="img-fluid rounded-2" alt="...">
+                    </div> 
+                <div class="card-body">
+                     <div class="mb-3 text-muted">
+                        <time datetime="2025-12-15">19 December 2025</time>
+                        <a href="#"  class="ms-4 text-muted">81 comment</a>
+                    </div>
+                    <h6 class="card-title">5 Tips For Your Job Interviews</h6>
+                    <p class="card-text text-muted">A job ravenously while Far much that one rank beheld after outside....</p>
+                    <a href="blog.html">Read More <i class="bi bi-chevron-right"></i></a>
+                </div>
+                </div>
+            </div>
+        </div>
+        <!-- row2 -->
+         <div class="row mt-4 g-4">
+            <div class="col-sm-12 col-lg-4">
+                <div class="card p-3 rounded-2">
+                    <div class="news-img">
+                        <img src="./Photo/working.jpg" class="img-fluid rounded-2" alt="...">
+                    </div> 
+                <div class="card-body">
+                    <div class="mb-3 text-muted">
+                        <time datetime="2025-12-15">15 December 2025</time>
+                        <a href="#"  class="ms-4 text-muted">12 comment</a>
+                    </div>
+                    <h6 class="card-title">Attract Sales And Profits</h6>
+                    <p class="card-text text-muted">A job ravenously while Far much that one rank beheld after outside..</p>
+                    <a href="blog.html">Read More <i class="bi bi-chevron-right"></i></a>
+                </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-lg-4">
+                <div class="card rounded-2 p-3">
+                    <div class="news-img">
+                        <img src="./Photo/overwork.jpg" class="img-fluid rounded-2" alt="...">
+                    </div> 
+                <div class="card-body">
+                     <div class="mb-3 text-muted">
+                        <time datetime="2025-12-15">18 December 2025</time>
+                        <a href="#" class="ms-4 text-muted">10 comment</a>
+                    </div>
+                    <h6 class="card-title ">Overworked Newspaper Editor</h6>
+                    <p class="card-text text-muted">A job ravenously while Far much that one rank beheld after outside....</p>
+                    <a href="blog.html">Read More <i class="bi bi-chevron-right"></i></a>
+                </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-lg-4">
+                <div class="card rounded-2 p-3">
+                    <div class="news-img">
+                        <img src="./Photo/interviwe.jpg" class="img-fluid rounded-2" alt="...">
+                    </div> 
+                <div class="card-body">
+                     <div class="mb-3 text-muted">
+                        <time datetime="2025-12-15">19 December 2025</time>
+                        <a href="#"  class="ms-4 text-muted">81 comment</a>
+                    </div>
+                    <h6 class="card-title">5 Tips For Your Job Interviews</h6>
+                    <p class="card-text text-muted">A job ravenously while Far much that one rank beheld after outside....</p>
+                    <a href="blog.html">Read More <i class="bi bi-chevron-right"></i></a>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+ 
+</main>
+<hr>
+<footer>
+  <div class="container">
+    
+    <div class="row bg-white p-5 d-flex justify-content-center align-items-center">
+      <div class="col-sm-12 col-lg-3">
+        <ul class="list-unstyled">
+          <li><img src="./Photo/logo.svg" alt="logo" style="width: 120px;"></li>
+          <li class="fw-bold">Call Us</li>
+          <li><a href="tel:+93791234567" class="fw-bold d-block"></a></li>
+          <li><a href="#" class="text-muted">329 Queensberry Street, North Melbourne VIC</a></li>
+          <li><a href="#" class="text-muted">3051, Australia.</a></li>
+          <li><a href="#" class="text-muted">support@superio.com</a></li>
+      </div>
+
+      <div class="col-sm-12 col-lg-9">
+        <div class="row">
+            <div class="col-6 col-lg-3">
+        <ul class="list-unstyled">
+          <li class="fw-bold">For Candidates</li>
+          <li><a href="" class="text-muted"></a>Browse Jobs</li>
+          <li><a href="" class="text-muted">Candidate Dashboard</a></li>
+          <li><a href="" class="text-muted">Job Alerts</a></li>
+          <li><a href="" class="text-muted">My Bookmarks</a></li>
+        </ul>
+      </div>
+
+      <div class="col-6 col-lg-3">
+        <ul class="list-unstyled">
+          <li class="fw-bold">For Employers</li>
+          <li><a href="services.html" class="text-muted">Browse Candidates</a></li>
+          <li><a href="services.html" class="text-muted">Add JOb</a></li>
+          <li><a href="services.html" class="text-muted">Job Packages</a></li>
+        </ul>
+      </div>
+
+      <div class="col-6 col-lg-3">
+        <ul class="list-unstyled">
+          <li class="fw-bold">About Us</li>
+           <li><a href="services.html" class="text-muted">About Us</a></li>
+          <li><a href="services.html" class="text-muted">Job Page Invoice</a></li>
+          <li><a href="services.html" class="text-muted">Terms Page</a></li>
+          <li><a href="services.html" class="text-muted">Blog</a></li>
+          <li><a href="services.html" class="text-muted">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="col-6 col-lg-3">
+        <ul class="list-unstyled">
+          <li class="fw-bold">Mobile Apps</li>
+          <li><a href="services.html" class="text-muted">Click and Get started in seconds</a></li>
+          <li class="mb-2"><a href="services.html"><img src="./Photo/apple.webp" class="img-fluid" alt="apple"></a></li>
+          <li><a href="services.html"><img src="./Photo/google.webp" class="img-fluid" alt="apple"></a></li>
+        </ul>
+      </div>
+        </div>
+      </div>
+      <hr>
+    </div>
+    <div class="row text-muted mx-4">
+      <div class="col-sm-12 col-lg-6">
+        <p>&copy;2025 Superio . All rights reserved.</p>
+      </div>
+      <div class="col-sm-12 col-lg-6 text-end">
+         <i class="bi bi-facebook"></i>
+         <i class="bi bi-twitter"></i>
+         <i class="bi bi-instagram"></i>
+         <i class="bi bi-linkedin"></i>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+<!-- count cdn -->
+     <script src="https://cdn.jsdelivr.net/npm/@srexi/purecounterjs/dist/purecounter_vanilla.js"></script>
+     <script>
+         new PureCounter();
+     </script>
+</body>
+</html>
